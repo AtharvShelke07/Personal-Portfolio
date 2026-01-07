@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atharv Shelke | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #00eaff;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00eaff;
+    }
+
+    section {
+      padding: 100px 10%;
+      min-height: 100vh;
+    }
+
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text span {
+      color: #00eaff;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #00eaff;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00c4d6;
+      transform: scale(1.05);
+    }
+
+    .skill-card,
+    .project-card {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .hero-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #00eaff, #0077ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      font-weight: bold;
+      color: #000;
+    }
+
+
+    .title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 60px;
+    }
+
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 25px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 234, 255, 0.3);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #00eaff;
+    }
+
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Atharv</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hi, I'm <span>Atharv Shelke</span></h2>
+      <p>
+        CSE Student | Web Developer | Problem Solver
+        Passionate about building modern web apps and real-world solutions.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">A</div>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">C / C++</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>
+          <a href="https://github.com/AtharvShelke07/Weather-Crop-Advisor-KRISHI-SARATHI-" target="_blank"
+            style="text-decoration: none; color: #00eaff;">
+            KrushiSarthi 🔗</a>
+        </h3>
+        <p>Weather-based personalized crop advisory system using Node.js & APIs.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>
+          <a href="https://github.com/AtharvShelke07/AI-Smart-Appointment-Assistant" target="_blank"
+            style="text-decoration: none; color: #00eaff;">
+            Smart Appointment Assistant 🔗
+          </a>
+        </h3>
+        <p>AI-based scheduling and automation system using Gemini API.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>
+          <a href="https://github.com/AtharvShelke07" target="_blank" style="text-decoration: none; color: #00eaff;">
+            Portfolio Website 🔗
+          </a>
+        </h3>
+        <p>Modern responsive portfolio using HTML, CSS & JS.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="title">Contact Me</h2>
+    <p>Email: <a href="mailto:atharvshelke2006@gmail.com" style="color:#00eaff;">atharvshelke2006@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/AtharvShelke07" style="color:#00eaff;">github.com/AtharvShelke07</a></p>
+  </section>
+
+  <footer>
+    © 2026 Atharv Shelke | All Rights Reserved
+  </footer>
+
+  <script>
+
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+        const pos = card.getBoundingClientRect().top;
+        if (pos < window.innerHeight - 50) {
+          card.style.opacity = 1;
+          card.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
