@@ -3,7 +3,7 @@
 A modern, responsive personal portfolio website designed to showcase my software engineering projects, technical skills, and contact information.
 
 ## 🚀 Live Demo
-**[Click here to view the website]([https://atharvshelke07.github.io/Portfolio/](https://atharvshelke07.github.io/Personal-Portfolio/))**
+**[Click here to view the website](https://atharvshelke07.github.io/Personal-Portfolio/)**
 
 *(Note: If the link above doesn't work yet, I am currently setting up GitHub Pages)*
 
